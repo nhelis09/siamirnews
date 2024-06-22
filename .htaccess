@@ -1,0 +1,24 @@
+DirectoryIndex index.php index.html login.php 
+Options -Indexes
+
+RewriteEngine On
+
+# Mengarahkan ke halaman error403.php untuk Forbidden (Options -Indexes)
+ErrorDocument 403 /403.shtml
+
+
+# Memetakan URL bersih ke skrip PHP
+RewriteRule ^index$ index.php
+RewriteRule ^forum$ forum.php
+RewriteRule ^profile$ profile.php
+RewriteRule ^login$ login.php
+RewriteRule ^login1$ login1.php
+RewriteRule ^register$ registerakun.php
+RewriteRule ^register1$ registerakun1.php
+RewriteRule ^admin$ superadmin/admin.php
+RewriteRule ^beranda$ superadmin/beranda.php
+RewriteRule ^kategori$ superadmin/kategoriberita.php
+RewriteRule ^komentar1$ superadmin/komentar1.php
+RewriteRule ^komentar2$ superadmin/komentar2.php
+RewriteRule ^kategoriberita$ kategoriberita.php
+RewriteRule ^detailberita$ detailberita.php
